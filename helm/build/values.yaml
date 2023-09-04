@@ -1,0 +1,15 @@
+app:
+  name: windturbine-wind-turbine-app
+  namespace: windturbine
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/windturbine-wind-turbine
+  org: keynote-demo
+  name: windturbine-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: windturbine/wind-turbine-app
+  tag: latest
